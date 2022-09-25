@@ -1,6 +1,6 @@
 .array-container {
   position: absolute;
-  left: 100px;
+  left: 30px;
 }
 
 .array-bar {
@@ -11,5 +11,20 @@
 }
 
 button {
-  margin: 0 5px;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+}
+
+.generate {
+  background-color: dodgerblue;
+}
+
+.mergeSort {
+  background-color: lavender;
+  color: black;
 }

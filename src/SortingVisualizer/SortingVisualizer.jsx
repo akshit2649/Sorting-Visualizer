@@ -22,7 +22,7 @@ const SortingVisualizer = () => {
   useEffect(() => {
     let temp = [];
     for (let i = 0; i < 310; i++) {
-      temp.push(randomIntFromInterval(5, 730));
+      temp.push(randomIntFromInterval(5, 680));
     }
     setArray(temp);
   }, [changeArray]);
@@ -60,8 +60,12 @@ const SortingVisualizer = () => {
       {array.map((value, idx) => (
         <div className="array-bar" key={idx} style={{ height: `${value}px` }} />
       ))}
-      <button onClick={changeArrayHandler}>Generate new Array</button>
-      <button onClick={mergeSortHandler}>MergeSort</button>
+      <button onClick={changeArrayHandler} className="generate">
+        Generate new Array
+      </button>
+      <button onClick={mergeSortHandler} className="mergeSort">
+        MergeSort
+      </button>
     </div>
   );
 };
